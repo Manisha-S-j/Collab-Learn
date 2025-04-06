@@ -1,0 +1,54 @@
+.discussion-container {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--background);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .post-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+  }
+  
+  .post-input button {
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .discussion-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .discussion-list li {
+    padding: 12px;
+    margin: 8px 0;
+    background: var(--card-background);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user {
+    font-weight: bold;
+  }
+  
+  .replies {
+    font-size: 14px;
+    color: gray;
+  }
+  

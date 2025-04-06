@@ -1,0 +1,173 @@
+/* 🌗 General Styles for Light/Dark Mode */
+:root {
+    --bg-light: #f9f9f9;
+    --bg-dark: #1e1e1e;
+    --text-light: #333;
+    --text-dark: #f9f9f9;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #2a2a2a;
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+  }
+  
+  /* 🌗 Apply Theme */
+  .hackathons-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--bg-light);
+    color: var(--text-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  /* 🌗 Dark Mode */
+  .dark .hackathons-container {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  /* 📌 Filter Buttons */
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .filter-buttons button.active {
+    background: var(--secondary-color);
+    font-weight: bold;
+  }
+  
+  /* 🌗 Adjust for Dark Mode */
+  .dark .filter-buttons button {
+    background: #444;
+    color: #ddd;
+  }
+  
+  .dark .filter-buttons button.active {
+    background: #007bff;
+  }
+  
+  /* 📌 Hackathons List */
+  .hackathons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* 📌 Hackathon Cards */
+  .hackathon-card {
+    background: var(--card-bg-light);
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  /* 🌗 Dark Mode */
+  .dark .hackathon-card {
+    background: var(--card-bg-dark);
+    color: var(--text-dark);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  
+  .hackathon-card h3 {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 5px 0;
+  }
+  
+  /* 🌗 Adjust text color for dark mode */
+  .dark .hackathon-card h3 {
+    color: #1e90ff;
+  }
+  
+  .hackathon-card p {
+    color: var(--text-light);
+    font-size: 14px;
+  }
+  
+  /* 🌗 Adjust for Dark Mode */
+  .dark .hackathon-card p {
+    color: #ccc;
+  }
+  
+  /* 📌 Status Tags */
+  .status-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  .status-tag.ongoing {
+    background: #ff9800;
+  }
+  
+  .status-tag.current {
+    background: #2196f3;
+  }
+  
+  .status-tag.completed {
+    background: #4caf50;
+  }
+  
+  /* 📌 No Hackathons Message */
+  .no-hackathons {
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-light);
+  }
+  
+  /* 🌗 Adjust for Dark Mode */
+  .dark .no-hackathons {
+    color: #aaa;
+  }
+
+  /* 📌 Register Button */
+.register-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .register-btn:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* 🌗 Dark Mode */
+  .dark .register-btn {
+    background: #444;
+  }
+  
+  .dark .register-btn:hover {
+    background: #007bff;
+  }
+  

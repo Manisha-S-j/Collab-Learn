@@ -1,0 +1,215 @@
+:root {
+    --bg-light: #ffffff;
+    --bg-dark: #121212;
+    --text-light: #333;
+    --text-dark: #ffffff;
+  }
+
+/* 🌟 General Styles */
+.home-container {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #333;
+  }
+  
+  /* 🎯 Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+  
+  /* 🔥 Call-to-Action (CTA) Buttons */
+  .cta-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+  }
+  
+  .primary-btn {
+    background: #ff7eb3;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .primary-btn:hover {
+    background: #e66494;
+  }
+  
+  .secondary-btn {
+    background: white;
+    color: #6a11cb;
+    border: 2px solid #6a11cb;
+  }
+  
+  .secondary-btn:hover {
+    background: #6a11cb;
+    color: white;
+  }
+  
+  /* 🚀 Features Section */
+  .features-section {
+    margin-top: 50px;
+  }
+  
+  .features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-item {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ✅ Testimonials */
+  .testimonials {
+    margin-top: 50px;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial {
+    margin: 10px 0;
+    font-style: italic;
+  }
+
+  .testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #6a11cb;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-feedback {
+    font-size: 1.2rem;
+    font-style: italic;
+    max-width: 600px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial-role {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* 📊 Stats Section */
+  .stats-section {
+    margin-top: 50px;
+    padding: 40px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 12px;
+  }
+  
+  .stats-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .stats-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .stat-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .stat-item p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  /* 🌍 Footer */
+  footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+
+  
+body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
