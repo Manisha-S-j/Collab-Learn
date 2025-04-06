@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import "./Auth.css";
 
-
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const Signup = () => {
   const [formData, setFormData] = useState({ name: "", email: "", password: "" });
   const [error, setError] = useState(null);
@@ -20,7 +20,7 @@ const Signup = () => {
     setError(null); // Clear previous errors
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+      const res = await axios.post("${BASE_URL}/api/auth/signup", formData);
       console.log("Signup Success:", res.data);
       navigate("/dashboard"); // Redirect to login after signup
     } catch (err) {

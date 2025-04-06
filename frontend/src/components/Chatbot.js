@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Chatbot.css";
 import { FaRobot, FaTimes } from "react-icons/fa";
 
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const Chatbot = () => {
   const [messages, setMessages] = useState([
     { text: "👋 Hi! How can I assist you today?", sender: "bot" }
@@ -20,7 +21,7 @@ const Chatbot = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/chatbot", {
+      const response = await axios.post(`${BASE_URL}/api/chatbot`, {
         message: input
       });
 

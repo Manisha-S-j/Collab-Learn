@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import "./Auth.css";
 
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState(null);
@@ -19,7 +20,7 @@ const Login = () => {
     setError(null); // Clear previous errors
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", formData);
+      const res = await axios.post("${BASE_URL}/api/auth/login", formData);
       console.log("Login Success:", res.data);
 
       // Save token in localStorage (so user stays logged in)
